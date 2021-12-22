@@ -51,10 +51,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                     <a href="/">Home</a>
                                 </li>
                                 <li class="gnb-depth-1">
-                                    <a href="/about">About</a>
+                                    <a href="/sub/about.php">About</a>
                                     <ul>
-                                        <li><a href="/about">회사소개</a></li>
-                                        <li><a href="/milestone">회사연혁</a></li>
+                                        <li><a href="/sub/about.php">회사소개</a></li>
+                                        <li><a href="/sub/milestone.php">회사연혁</a></li>
                                     </ul><!-- /.sub-menu -->
                                 </li>
                                 <li class="gnb-depth-1 dropdown">
@@ -73,12 +73,12 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                     </ul><!-- /.sub-menu -->
                                 </li>
                                 <li class="gnb-depth-1">
-                                    <a href="/contact">Contact</a>
+                                    <a href="/sub/contact.php">Contact</a>
                                 </li>
                             </ul>
                             <div class="main-nav__right main-nav__right_one float-left">
                                 <div class="header_btn_1">
-                                    <a href="/contact">문의하기</a>
+                                    <a href="/sub/contact.php/#form">문의하기</a>
                                 </div>
                             </div>
                         </div><!-- /.navbar-collapse -->
