@@ -24,6 +24,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
  add_javascript('<script src="'.G5_THEME_PUBLIC_URL.'/vendor/js/appear.js"></script>', 0);
  add_javascript('<script src="'.G5_THEME_PUBLIC_URL.'/vendor/js/jarallax.min.js"></script>', 0);
  add_javascript('<script src="http://maps.google.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM"></script>', 0);
+ add_javascript('<script src="'.G5_THEME_PUBLIC_URL.'/vendor/js/theme.js"></script>', 0);
  add_javascript('<script src="'.G5_THEME_PUBLIC_URL.'/assets/js/base.js"></script>', 0);
  add_javascript('<script src="'.G5_THEME_PUBLIC_URL.'/assets/js/default.js"></script>', 0);
 ?>

@@ -2668,6 +2668,7 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  overflow-x: clip;
 }
 
 .testimonails_one .block-title {

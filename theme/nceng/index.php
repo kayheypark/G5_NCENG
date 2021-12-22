@@ -15,43 +15,23 @@ if(G5_COMMUNITY_USE === false) {
 include_once(G5_THEME_PATH.'/head.php');
 ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--Main Slider Start-->
 <section class="main-slider">
     <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
-"effect": "fade",
-"pagination": {
-"el": "#main-slider-pagination",
-"type": "bullets",
-"clickable": true
-},
-"navigation": {
-"nextEl": ".banner-slider-button-next",
-"prevEl": ".banner-slider-button-prev",
-"clickable": true
-},
-"autoplay": {
-"delay": 5000
-}}'>
+    "effect": "fade",
+    "pagination": {
+    "el": "#main-slider-pagination",
+    "type": "bullets",
+    "clickable": true
+    },
+    "navigation": {
+    "nextEl": ".banner-slider-button-next",
+    "prevEl": ".banner-slider-button-prev",
+    "clickable": true
+    },
+    "autoplay": {
+    "delay": 5000
+    }}'>
 
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -108,7 +88,6 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </div>
 </section>
-
 
 <!-- Our Services One Start -->
 <section class="our_services_one">
@@ -174,10 +153,6 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </div>
 </section>
-
-
-
-
 
 <!--Testimonails One Start-->
 <section class="testimonails_one"
@@ -322,36 +297,6 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
     </div>
 </section>
-
-
-
-
-<script src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/js/theme.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <?php
 include_once(G5_THEME_PATH.'/tail.php');

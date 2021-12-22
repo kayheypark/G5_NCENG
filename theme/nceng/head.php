@@ -21,68 +21,73 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 ?>
 
 <!-- 상단 시작 { -->
+<div class="preloader">
+    <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/loader.png" class="preloader__image" alt="">
+</div><!-- /.preloader -->
 
-<div class="site-header__header-one-wrap clearfix">
-    <header class="main-nav__header-one">
-        <div class="container">
-            <nav class="header-navigation one stricky">
-                <div class="container-box clearfix">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="main-nav__left main-nav__left_one float-left">
-                        <div class="logo_one">
-                            <a href="/" class="main-nav__logo">
-                                <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/resources/logo.png" class="main-logo"
-                                    alt="Awesome Image">
+<div class="page-wrapper">
+
+    <div class="site-header__header-one-wrap clearfix">
+        <header class="main-nav__header-one">
+            <div class="container">
+                <nav class="header-navigation one stricky">
+                    <div class="container-box clearfix">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="main-nav__left main-nav__left_one float-left">
+                            <div class="logo_one">
+                                <a href="/" class="main-nav__logo">
+                                    <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/resources/logo.png" class="main-logo"
+                                        alt="Awesome Image">
+                                </a>
+                            </div>
+                            <a href="#" class="side-menu__toggler">
+                                <i class="fa fa-bars"></i>
                             </a>
                         </div>
-                        <a href="#" class="side-menu__toggler">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </div>
 
-                    <div class="main-nav__main-navigation one float-right">
-                        <ul class="main-nav__navigation-box float-left">
-                            <li class="gnb-depth-1">
-                                <a href="/">Home</a>
-                            </li>
-                            <li class="gnb-depth-1">
-                                <a href="/about">About</a>
-                                <ul>
-                                    <li><a href="/about">회사소개</a></li>
-                                    <li><a href="/milestone">회사연혁</a></li>
-                                </ul><!-- /.sub-menu -->
-                            </li>
-                            <li class="gnb-depth-1 dropdown">
-                                <a href="#">Product</a>
-                                <ul>
-                                    <li><a href="blog.html">전자 시험기</a></li>
-                                    <li><a href="blog.html">중력 시험기</a></li>
-                                    <li><a href="blog.html">최첨단 시험기</a></li>
-                                </ul><!-- /.sub-menu -->
-                            </li>
-                            <li class="gnb-depth-1 dropdown <%= (pagecategory == 'notice') ? className : '' %>">
-                                <a href="/notice">Notice</a>
-                                <ul>
-                                    <li><a href="/notice">공지사항</a></li>
-                                    <li><a href="/faq">FAQ</a></li>
-                                </ul><!-- /.sub-menu -->
-                            </li>
-                            <li class="gnb-depth-1 <%= (pagecategory == 'contact') ? className : '' %>">
-                                <a href="/contact">Contact</a>
-                            </li>
-                        </ul>
-                        <div class="main-nav__right main-nav__right_one float-left">
-                            <div class="header_btn_1">
-                                <a href="/contact">문의하기</a>
+                        <div class="main-nav__main-navigation one float-right">
+                            <ul class="main-nav__navigation-box float-left">
+                                <li class="gnb-depth-1">
+                                    <a href="/">Home</a>
+                                </li>
+                                <li class="gnb-depth-1">
+                                    <a href="/about">About</a>
+                                    <ul>
+                                        <li><a href="/about">회사소개</a></li>
+                                        <li><a href="/milestone">회사연혁</a></li>
+                                    </ul><!-- /.sub-menu -->
+                                </li>
+                                <li class="gnb-depth-1 dropdown">
+                                    <a href="#">Product</a>
+                                    <ul>
+                                        <li><a href="blog.html">전자 시험기</a></li>
+                                        <li><a href="blog.html">중력 시험기</a></li>
+                                        <li><a href="blog.html">최첨단 시험기</a></li>
+                                    </ul><!-- /.sub-menu -->
+                                </li>
+                                <li class="gnb-depth-1 dropdown">
+                                    <a href="/notice">Notice</a>
+                                    <ul>
+                                        <li><a href="/notice">공지사항</a></li>
+                                        <li><a href="/faq">FAQ</a></li>
+                                    </ul><!-- /.sub-menu -->
+                                </li>
+                                <li class="gnb-depth-1">
+                                    <a href="/contact">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="main-nav__right main-nav__right_one float-left">
+                                <div class="header_btn_1">
+                                    <a href="/contact">문의하기</a>
+                                </div>
                             </div>
-                        </div>
-                    </div><!-- /.navbar-collapse -->
+                        </div><!-- /.navbar-collapse -->
 
-                </div>
-            </nav>
-        </div>
-    </header>
-</div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
 
 <!-- } 상단 끝 -->
 
