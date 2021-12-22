@@ -58,18 +58,19 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                     </ul><!-- /.sub-menu -->
                                 </li>
                                 <li class="gnb-depth-1 dropdown">
-                                    <a href="#">Product</a>
+                                    <a href="/bbs/board.php?bo_table=product">Product</a>
                                     <ul>
-                                        <li><a href="blog.html">전자 시험기</a></li>
-                                        <li><a href="blog.html">중력 시험기</a></li>
-                                        <li><a href="blog.html">최첨단 시험기</a></li>
+                                        <li><a href="/bbs/board.php?bo_table=product&sca=일반시험기">일반시험기</a></li>
+                                        <li><a href="/bbs/board.php?bo_table=product&sca=중급시험기">중급시험기</a></li>
+                                        <li><a href="/bbs/board.php?bo_table=product&sca=고급시험기">고급시험기</a></li>
                                     </ul><!-- /.sub-menu -->
                                 </li>
                                 <li class="gnb-depth-1 dropdown">
-                                    <a href="/notice">Notice</a>
+                                    <a href="/bbs/board.php?bo_table=notice">Notice</a>
                                     <ul>
-                                        <li><a href="/notice">공지사항</a></li>
-                                        <li><a href="/faq">FAQ</a></li>
+                                        <li><a href="/bbs/board.php?bo_table=notice">공지사항</a></li>
+                                        <li><a href="/sub/faq.php">FAQ</a></li>
+                                        <li><a href="/bbs/board.php?bo_table=qna">1:1 문의</a></li>
                                     </ul><!-- /.sub-menu -->
                                 </li>
                                 <li class="gnb-depth-1">
