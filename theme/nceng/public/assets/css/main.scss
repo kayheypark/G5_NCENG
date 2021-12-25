@@ -51,6 +51,8 @@ $white: #FFFFFF;
 //레이아웃 : E
 
 //섹션상세내용 : S
+.section_board {
+}
 .board {
     a {
         color: $gray !important;
@@ -60,6 +62,9 @@ $white: #FFFFFF;
     }
     .bo_tit a {
         color: $black !important;
+    }
+   .bo_v_tit {
+       font-size: 30px !important;
     }
     &_inner {
         @extend %container;

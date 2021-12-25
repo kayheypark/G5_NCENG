@@ -24,6 +24,10 @@
   color: #333333 !important;
 }
 
+.board .bo_v_tit {
+  font-size: 30px !important;
+}
+
 .board_inner {
   padding-top: 150px;
   padding-bottom: 150px;

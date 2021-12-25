@@ -6,7 +6,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 <!-- 하단 시작 { -->
     
     <!--Site Footer Start-->
-    <footer class="site-footer" style="background-image: url(<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/resources/footer-bg-img.jpg)">
+    <!-- <footer class="site-footer" style="background-image: url(<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/resources/footer-bg-img.jpg)"> -->
+    <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-6 col-md-6">
@@ -43,14 +44,16 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="footer-widget__column footer-widget__explore wow fadeInUp animated"
                         data-wow-delay="200ms">
                         <div class="footer-widget__title">
                             <h3>고객지원</h3>
                         </div>
                         <ul class="footer-widget__explore_list list-unstyled">
-                            <li><a href="about.html">개인정보처리방침</a></li>
-                            <li><a href="projects.html">사이트이용약관</a></li>
+                            <li><a href="/sub/privacy.php">개인정보처리방침</a></li>
+                            <li><a href="/sub/termsofuse.php">사이트이용약관</a></li>
                         </ul>
 
                     </div>
@@ -83,30 +86,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="footer-widget__column footer-widget__newsletter wow fadeInUp animated"
-                        data-wow-delay="400ms"
-                        style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
-                        <div class="footer-widget__title">
-                            <h3>뉴스레터</h3>
-                        </div>
-                        <div class="footer-widget__newsletter_text">
-                            <p>엔씨엔지니어링의 유익한 소식을 아래 메일로 수신해보세요!</p>
-                        </div>
-                        <form
-                            data-url="ADD_YOUR_MAILCHIMP_FORM_URL"
-                            class="mc-form">
-                            <div class="footer_input-box">
-                                <input type="email" name="EMAIL" id="mc-email" placeholder="Email Address">
-                                <button type="submit" class="button"><span
-                                        class="flaticon-right-arrow"></span></button>
-                            </div>
-                            <input type="checkbox" name="Newsletter" id="Newsletter" />
-                            <label for="Newsletter"><small>(※개인정보처리방침에 동의함)</small></label>
-                        </form>
-                        <div class="mc-form__response"></div><!-- /.mc-form__response -->
-                    </div>
-                </div>
+
             </div>
         </div>
     </footer>
