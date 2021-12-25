@@ -189,6 +189,10 @@
   padding-left: 0 !important;
 }
 
+.footer-widget__latest_news_list li + li {
+  margin-top: 20px !important;
+}
+
 .txt_rdy, .txt_done {
   font-size: 12px !important;
 }
@@ -233,6 +237,11 @@
 }
 
 .notice_icon {
+  color: #ea130e !important;
+}
+
+.bo_tit .new_icon {
+  background-color: rgba(234, 19, 14, 0.1) !important;
   color: #ea130e !important;
 }
 /*# sourceMappingURL=main.css.map */

@@ -72,7 +72,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                             </ul>
                             <div class="main-nav__right main-nav__right_one float-left">
                                 <div class="header_btn_1">
-                                    <a href="/sub/contact.php/#form">문의하기</a>
+                                    <a href="/sub/contact.php/#form">간편문의</a>
                                 </div>
                             </div>
                         </div><!-- /.navbar-collapse -->

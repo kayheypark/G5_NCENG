@@ -77,7 +77,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
                         // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
                         // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
-                        echo latest('theme/notice', 'notice', 4, 13);
+                        echo latest('theme/notice', 'notice', 4, 17);
                         ?>
                     </div>
                 </div>
@@ -126,32 +126,17 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         <ul class="mobile-nav__contact list-unstyled">
             <li>
                 <i class="flaticon-email"></i>
-                <a href="mailto:needhelp@azino.com">needhelp@inusti.com</a>
+                <a href="mailto:<?php echo $config['cf_8'] ?>"><?php echo $config['cf_8'] ?></a>
             </li>
             <li>
                 <i class="flaticon-telephone"></i>
-                <a href="tel:666-888-0000">666 888 0000</a>
+                <a href="tel:<?php echo $config['cf_5'] ?>"><?php echo $config['cf_5'] ?></a>
+            </li>
+            <li>
+                <i class="fa fa-clock" style="font-size: 15px; color: #FFFFFF;" title="운영시간"></i>
+                <span style="font-size: 15px; color: #FFFFFF;"><?php echo $config['cf_7'] ?></span>
             </li>
         </ul><!-- /.mobile-nav__contact -->
-        <div class="mobile-nav__top">
-            <div class="mobile-nav__language">
-                <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/resources/flag-1-1.jpg" alt="">
-                <label class="sr-only" for="language-select">select language</label>
-                <!-- /#language-select.sr-only -->
-                <select class="selectpicker" id="language-select">
-                    <option value="english">English</option>
-                    <option value="arabic">Arabic</option>
-                </select>
-            </div><!-- /.mobile-nav__language -->
-            <div class="mobile-nav__social">
-                <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="facebook"><i class="fab fa-facebook-square"></i></a>
-                <a href="#" aria-label="pinterest"><i class="fab fa-pinterest-p"></i></a>
-                <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
-            </div><!-- /.mobile-nav__social -->
-        </div><!-- /.mobile-nav__top -->
-
-
 
     </div>
     <!-- /.mobile-nav__content -->
