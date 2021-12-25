@@ -63,7 +63,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                     <ul>
                                         <li><a href="/bbs/board.php?bo_table=notice">공지사항</a></li>
                                         <li><a href="/sub/faq.php">자주묻는질문</a></li>
-                                        <li><a href="/bbs/qalist.php">질문답변</a></li>
+                                        <li><a href="/bbs/qalist.php">1:1문의</a></li>
                                     </ul><!-- /.sub-menu -->
                                 </li>
                                 <li class="gnb-depth-1">

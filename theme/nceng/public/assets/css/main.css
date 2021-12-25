@@ -1,4 +1,4 @@
-.screen_out {
+.screen_out, legend {
   width: 0 !important;
   height: 0 !important;
   position: absolute !important;
@@ -185,11 +185,41 @@
   }
 }
 
-.txt_rdy {
+.footer-widget__latest_news_list li {
+  padding-left: 0 !important;
+}
+
+.txt_rdy, .txt_done {
   font-size: 12px !important;
 }
 
 .td_date {
   white-space: nowrap !important;
+}
+
+.bo_w_flie .file_wr {
+  height: unset !important;
+}
+
+.bo_w_flie .lb_icon {
+  position: static !important;
+  margin-bottom: 0 !important;
+}
+
+.bo_w_flie input {
+  line-height: 1.2 !important;
+  margin: 0 !important;
+}
+
+.bo_w_flie .frm_file {
+  padding-left: 0 !important;
+}
+
+#bo_v_ans_form h2 {
+  font-weight: 700;
+}
+
+.frm_info {
+  padding-left: 20px !important;
 }
 /*# sourceMappingURL=main.css.map */

@@ -35,9 +35,15 @@ $white: #FFFFFF;
 }
 //믹스인 : E
 
+//초기화 : S
+legend {
+    @extend %screen_out;
+}
+//초기화 : E
+
 //헬퍼 : S
 //스크린아웃
-.screen_out {
+.screen_out, %screen_out {
     width: 0 !important;
     height: 0 !important;
     position: absolute !important;
@@ -202,13 +208,45 @@ $white: #FFFFFF;
         padding-bottom: 35px !important;
     }
 }
+.footer-widget__latest_news_list li {
+    padding-left: 0 !important;
+}
+
 //INUSTI 오버라이팅 : E
 
 //그누보드 클래스 오버라이팅 : S
-.txt_rdy {
+.txt_rdy, .txt_done {
     font-size: 12px !important;
 }
 .td_date{
     white-space: nowrap !important;
 }
+.bo_w_flie {
+    .file_wr {
+        height: unset !important;
+    }
+    .lb_icon {
+        position: static !important;
+        margin-bottom: 0 !important;
+    }
+    
+    input {
+        line-height: 1.2 !important;
+        margin: 0 !important;
+    }
+    .frm_file {
+        padding-left: 0 !important;
+    }
+}
+//1:1문의 : S
+#bo_v_ans_form {
+    h2 {
+        font-weight: 700;
+        
+    }
+}
+.frm_info {
+    padding-left: 20px !important;
+}
+//1:1문의 : E
 //그누보드 클래스 오버라이팅 : E

@@ -97,7 +97,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <a href="#" class="fb-clr"><i class="fab fa-facebook-square"></i></a>
                 <a href="#" class="dr-clr"><i class="fab fa-dribbble"></i></a>
                 <a href="#" class="ins-clr"><i class="fab fa-instagram"></i></a> -->
-                <?php if ($is_admin || $member['mb_id']=='manager') { ?><span class="pr-3" style="font-size: 15px;"><?php echo $member['mb_nick'] ?>(<?php echo $member['mb_id'] ?>)</span><?php } ?>
+                <?php if ($member['mb_id']) { ?><span class="pr-3" style="font-size: 15px;"><?php echo $member['mb_nick'] ?>(<?php echo $member['mb_id'] ?>)</span><?php } ?>
                 <?php if ($is_admin || $member['mb_id']=='manager') { ?><a href="/adm" class="btn_admin btn" target="_blank" title="관리자"><i class="fa fa-cog fa-spin"></i><span class="sound_only">관리자</span></a><?php } ?>
                 <?php if ($member['mb_id']) { ?><a href="/bbs/logout.php" class="btn_admin btn" title="로그아웃"><i class="fas fa-sign-out-alt"></i><span class="sound_only">로그아웃</span></a><?php } ?>
                 <?php if (!$member['mb_id']) { ?><a href="/bbs/login.php" class="btn_admin btn" title="로그인"><i class="fas fa-sign-in-alt"></i><span class="sound_only">로그인</span></a><?php } ?>

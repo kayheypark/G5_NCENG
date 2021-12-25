@@ -11,9 +11,6 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
 <ul class="footer-widget__latest_news_list list-unstyled">
     <?php for ($i=0; $i<$list_count; $i++) {  ?>
     <li>
-        <div class="footer-widget__latest_news_image">
-            <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/resources/fotter-l-n-img-1.jpg" alt="">
-        </div>
         <div class="footer-widget__latest_news_content">
             <h4>​<?php echo date("Y. m. d.", strtotime($list[$i]['wr_datetime'])) ?></h4>
             <p><a href="<?php echo get_pretty_url($bo_table, $list[$i]['wr_id']) ?>"><?php echo $list[$i]['subject']?></a></p>

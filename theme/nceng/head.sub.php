@@ -94,7 +94,7 @@ add_javascript('<script src="'.G5_JS_URL.'/placeholders.min.js"></script>', 0);
 add_stylesheet('<link rel="stylesheet" href="'.G5_JS_URL.'/font-awesome/css/font-awesome.min.css">', 0);
 
 // 필수
-add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_PUBLIC_URL.'/assets/css/main.css">', 0);
+add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_PUBLIC_URL.'/assets/css/main.css">', 1);
 // 파비콘
 add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_PUBLIC_URL.'/vendor/images/favicons/apple-touch-icon.png">', 0);
 add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_PUBLIC_URL.'/vendor/images/favicons/favicon-32x32.png">', 0);

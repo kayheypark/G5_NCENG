@@ -5,7 +5,16 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 0);
 ?>
 
+<!--Page Header Start-->
+<section class="page-header" style="background-image: url(<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/backgrounds/page-header-contact.jpg);">
+    <div class="container">
+        <h2>회원가입</h2>
+    </div>
+</section>
+
 <!-- 회원정보 입력/수정 시작 { -->
+<div class="container board_inner">
+
 
 <div class="register">
 <script src="<?php echo G5_JS_URL ?>/jquery.register_form.js"></script>
@@ -480,5 +489,5 @@ jQuery(function($){
 });
 
 </script>
-
+</div>
 <!-- } 회원정보 입력/수정 끝 -->
