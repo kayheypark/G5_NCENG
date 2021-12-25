@@ -98,10 +98,12 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <p>© Copyright 2020 by <a href="/">엔씨엔지니어링</a></p>
             </div>
             <div class="site-footer__social">
-                <a href="#" class="tw-clr"><i class="fab fa-twitter"></i></a>
+                <!-- <a href="#" class="tw-clr"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="fb-clr"><i class="fab fa-facebook-square"></i></a>
                 <a href="#" class="dr-clr"><i class="fab fa-dribbble"></i></a>
-                <a href="#" class="ins-clr"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="ins-clr"><i class="fab fa-instagram"></i></a> -->
+                <?php if ($admin_href) { ?><a href="/adm" class="btn_admin btn" title="관리자 페이지로"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자 페이지로</span></a><?php } ?>
+                <?php if (!$admin_href) { ?><a href="/bbs/login.php" class="btn_admin btn" title="로그인"><i class="fa fa-lock fa-fw"></i><span class="sound_only">로그인</span></a><?php } ?>
             </div>
         </div>
     </div>

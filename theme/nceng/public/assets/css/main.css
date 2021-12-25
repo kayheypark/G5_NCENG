@@ -1,3 +1,10 @@
+.screen_out {
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
 .container, .board_inner {
   width: 100%;
   margin: 0 auto;
@@ -26,6 +33,17 @@
 
 .board .bo_v_tit {
   font-size: 30px !important;
+}
+
+.board .more_opt.is_list_btn li {
+  width: unset !important;
+}
+
+.board .more_opt.is_list_btn button {
+  display: flex !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+  column-gap: 5px;
 }
 
 .board_inner {

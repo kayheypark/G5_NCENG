@@ -109,7 +109,8 @@ include_once(G5_PATH.'/head.php');
 </section>
 
 <!--Counter Three Start-->
-<section class="counter_two three" style="background-image: url(<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/resources/counter_two_bg.jpg)">
+<!-- <section class="counter_two three" style="background-image: url(<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/resources/counter_two_bg.jpg)"> -->
+<section class="counter_two three">
     <div class="container">
         <ul class="counter_two_box list-unstyled">
             <li class="counter_two_single wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">

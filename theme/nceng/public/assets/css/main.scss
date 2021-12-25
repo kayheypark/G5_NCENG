@@ -35,6 +35,16 @@ $white: #FFFFFF;
 }
 //믹스인 : E
 
+//헬퍼 : S
+//스크린아웃
+.screen_out {
+    width: 0 !important;
+    height: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+}
+//헬퍼 : E
+
 //레이아웃 : S
 .container, %container {
     width: 100%;
@@ -65,6 +75,17 @@ $white: #FFFFFF;
     }
    .bo_v_tit {
        font-size: 30px !important;
+    }
+    .more_opt.is_list_btn {
+        li {
+            width: unset !important;
+        }
+        button {
+            display: flex !important;
+            align-items: center !important;
+            white-space: nowrap !important;
+            column-gap: 5px;
+        }
     }
     &_inner {
         @extend %container;
