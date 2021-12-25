@@ -43,6 +43,17 @@ $white: #FFFFFF;
     position: absolute !important;
     left: -9999px !important;
 }
+
+.d_none_mob {
+    @include rwd(mobile) {
+        display: none !important;
+    }
+}
+.d_none_tab {
+    @include rwd(tablet) {
+        display: none !important;
+    }
+}
 //헬퍼 : E
 
 //레이아웃 : S
@@ -109,6 +120,7 @@ $white: #FFFFFF;
     ul {
         display: flex !important;
         gap: 6px !important;
+        flex-wrap: wrap !important;
     }
     ul li a {
         padding: 12px 22px 10px !important;
@@ -116,6 +128,12 @@ $white: #FFFFFF;
         border-color: #e4e4e4 !important;
         color: #151515 !important;
         transition: all 200ms ease-in-out 0s;
+        @include rwd(tablet) {
+            font-size: 15px !important;
+            padding: 8px 17px 6px !important;
+        }
+        @include rwd(mobile) {
+        }
         &:hover {
             color: $white !important;
             background-color: $brand !important;

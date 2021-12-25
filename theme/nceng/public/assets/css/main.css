@@ -5,6 +5,18 @@
   left: -9999px !important;
 }
 
+@media only screen and (max-width: 499px) {
+  .d_none_mob {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .d_none_tab {
+    display: none !important;
+  }
+}
+
 .container, .board_inner {
   width: 100%;
   margin: 0 auto;
@@ -73,6 +85,7 @@
 .category ul {
   display: flex !important;
   gap: 6px !important;
+  flex-wrap: wrap !important;
 }
 
 .category ul li a {
@@ -81,6 +94,13 @@
   border-color: #e4e4e4 !important;
   color: #151515 !important;
   transition: all 200ms ease-in-out 0s;
+}
+
+@media only screen and (max-width: 767px) {
+  .category ul li a {
+    font-size: 15px !important;
+    padding: 8px 17px 6px !important;
+  }
 }
 
 .category ul li a:hover {

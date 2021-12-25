@@ -79,7 +79,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <div class="tbl_head01 tbl_wrap">
                     <table>
                     <caption><?php echo $board['bo_subject'] ?> 목록</caption>
-                    <thead>
+                    <thead class="d_none_mob">
                     <tr>
                         <?php if ($is_checkbox) { ?>
                         <th scope="col" class="all_chk chk_box">
@@ -150,8 +150,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                                 <?php if ($list[$i]['comment_cnt']) { ?><span class="sound_only">댓글</span><span class="cnt_cmt"><?php echo $list[$i]['wr_comment']; ?></span><span class="sound_only">개</span><?php } ?>
                             </div>
                         </td>
-                        <td class="td_name sv_use"><?php echo $list[$i]['name'] ?></td>
-                        <td class="td_num"><?php echo $list[$i]['wr_hit'] ?></td>
+                        <td class="td_name sv_use d_none_mob"><?php echo $list[$i]['name'] ?></td>
+                        <td class="td_num d_none_mob"><?php echo $list[$i]['wr_hit'] ?></td>
                         <?php if ($is_good) { ?><td class="td_num"><?php echo $list[$i]['wr_good'] ?></td><?php } ?>
                         <?php if ($is_nogood) { ?><td class="td_num"><?php echo $list[$i]['wr_nogood'] ?></td><?php } ?>
                         <td class="td_datetime"><?php echo $list[$i]['datetime2'] ?></td>

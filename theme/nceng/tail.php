@@ -26,7 +26,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         <ul class="list-unstyled">
                             <li>
                                 <div class="footer-widget_about_icon">
-                                    <span class="flaticon-email"></span>
+                                    <span class="flaticon-email" title="이메일"></span>
                                 </div>
                                 <div class="footer-widget_about_text">
                                     <a href="mailto:example@gmail.com">example@gmail.com</a>
@@ -34,10 +34,18 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                             </li>
                             <li>
                                 <div class="footer-widget_about_icon">
-                                    <span class="flaticon-telephone"></span>
+                                    <span class="flaticon-telephone" title="대표번호"></span>
                                 </div>
                                 <div class="footer-widget_about_text">
                                     <a href="tel:02-000-0000">02-000-0000</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="footer-widget_about_icon">
+                                    <i class="fa fa-clock" style="font-size: 15px; color: #ea130e;" title="운영시간"></i>
+                                </div>
+                                <div class="footer-widget_about_text">
+                                    <span style="font-size: 15px; color: #FFFFFF;">09:00 ~ 18:00</span>
                                 </div>
                             </li>
                         </ul>
@@ -49,7 +57,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     <div class="footer-widget__column footer-widget__explore wow fadeInUp animated"
                         data-wow-delay="200ms">
                         <div class="footer-widget__title">
-                            <h3>고객지원</h3>
+                            <h3>운영정책</h3>
                         </div>
                         <ul class="footer-widget__explore_list list-unstyled">
                             <li><a href="/sub/privacy.php">개인정보처리방침</a></li>
@@ -64,7 +72,6 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         <div class="footer-widget__title">
                             <h3>공지사항</h3>
                         </div>
-
                         <?php
                         //공지사항
                         // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
@@ -72,9 +79,6 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
                         echo latest('theme/notice', 'notice', 4, 13);
                         ?>
-
-
-
                     </div>
                 </div>
 

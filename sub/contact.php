@@ -7,7 +7,7 @@ include_once(G5_PATH.'/head.php');
 <!--Page Header Start-->
 <section class="page-header" style="background-image: url(<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/backgrounds/page-header-contact.jpg);">
     <div class="container">
-        <h2>문의하기</h2>
+        <h2>오시는길</h2>
     </div>
 </section>
 

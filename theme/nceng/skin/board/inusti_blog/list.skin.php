@@ -21,168 +21,171 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         </div>
     </section>
 
+    <div class="board_inner">
+
     <div id="bo_list" style="width:<?php echo $width; ?>">
 
-    <!-- 게시판 카테고리 시작 { -->
-    <?php if ($is_category) { ?>
-    <div class="container">
-        <nav id="bo_cate" class="category">
-            <h2><?php echo $board['bo_subject'] ?> 카테고리</h2>
-            <ul id="bo_cate_ul">
-                <?php echo $category_option ?>
-            </ul>
-        </nav>
-    </div>
-    <?php } ?>
-    <!-- } 게시판 카테고리 끝 -->
-    
-    <form name="fboardlist" id="fboardlist" action="<?php echo G5_BBS_URL; ?>/board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post">
-    
-    <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
-    <input type="hidden" name="sfl" value="<?php echo $sfl ?>">
-    <input type="hidden" name="stx" value="<?php echo $stx ?>">
-    <input type="hidden" name="spt" value="<?php echo $spt ?>">
-    <input type="hidden" name="sca" value="<?php echo $sca ?>">
-    <input type="hidden" name="sst" value="<?php echo $sst ?>">
-    <input type="hidden" name="sod" value="<?php echo $sod ?>">
-    <input type="hidden" name="page" value="<?php echo $page ?>">
-    <input type="hidden" name="sw" value="">
-
-    <!-- 게시판 페이지 정보 및 버튼 시작 { -->
-    <div class="container board">
-        <div id="bo_btn_top">
-            <div id="bo_list_total">
-                <span>총 <?php echo number_format($total_count) ?>건</span>
-            </div>
-
-            <ul class="btn_bo_user">
-                <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_admin btn" title="관리자"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
-                <?php if ($rss_href) { ?><li><a href="<?php echo $rss_href ?>" class="btn_b01 btn" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i><span class="sound_only">RSS</span></a></li><?php } ?>
-                <li>
-                    <button type="button" class="btn_bo_sch btn_b01 btn" title="게시판 검색"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">게시판 검색</span></button>
-                </li>
-                <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b01 btn" title="글쓰기"><i class="fa fa-pen" aria-hidden="true"></i><span class="sound_only">글쓰기</span></a></li><?php } ?>
-                <?php if ($is_admin == 'super' || $is_auth) {  ?>
-                <li>
-                    <button type="button" class="btn_more_opt is_list_btn btn_b01 btn" title="게시판 리스트 옵션"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><span class="sound_only">게시판 리스트 옵션</span></button>
-                    <?php if ($is_checkbox) { ?>	
-                    <ul class="more_opt is_list_btn">  
-                        <li><button type="submit" name="btn_submit" value="선택삭제" onclick="document.pressed=this.value"><i class="fa fa-trash" aria-hidden="true"></i> 선택삭제</button></li>
-                        <li><button type="submit" name="btn_submit" value="선택복사" onclick="document.pressed=this.value"><i class="fa fa-files-o" aria-hidden="true"></i> 선택복사</button></li>
-                        <li><button type="submit" name="btn_submit" value="선택이동" onclick="document.pressed=this.value"><i class="fa fa-arrow-right" aria-hidden="true"></i> 선택이동</button></li>
-                    </ul>
-                    <?php } ?>
-                </li>
-                <?php }  ?>
-            </ul>
-        </div>
-    </div>
-    <!-- } 게시판 페이지 정보 및 버튼 끝 -->
-
-    <?php if ($is_checkbox) { ?>
-    <div class="container">
-        <div scope="col" class="all_chk chk_box">
-            <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);" class="selec_chk">
-            <label for="chkall">
-                <span></span>
-                <b class="_sound_only">전체선택</b>
-            </label>
-        </div>
-    </div>
-    <?php } ?>
-        	
-    <!--Blog One Start-->
-    <section class="blog_one blog-page">
+        <!-- 게시판 카테고리 시작 { -->
+        <?php if ($is_category) { ?>
         <div class="container">
-            <div class="row">
+            <nav id="bo_cate" class="category">
+                <h2><?php echo $board['bo_subject'] ?> 카테고리</h2>
+                <ul id="bo_cate_ul">
+                    <?php echo $category_option ?>
+                </ul>
+            </nav>
+        </div>
+        <?php } ?>
+        <!-- } 게시판 카테고리 끝 -->
+        
+        <form name="fboardlist" id="fboardlist" action="<?php echo G5_BBS_URL; ?>/board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post">
+        
+        <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
+        <input type="hidden" name="sfl" value="<?php echo $sfl ?>">
+        <input type="hidden" name="stx" value="<?php echo $stx ?>">
+        <input type="hidden" name="spt" value="<?php echo $spt ?>">
+        <input type="hidden" name="sca" value="<?php echo $sca ?>">
+        <input type="hidden" name="sst" value="<?php echo $sst ?>">
+        <input type="hidden" name="sod" value="<?php echo $sod ?>">
+        <input type="hidden" name="page" value="<?php echo $page ?>">
+        <input type="hidden" name="sw" value="">
 
+        <!-- 게시판 페이지 정보 및 버튼 시작 { -->
+        <div class="container board">
+            <div id="bo_btn_top">
+                <div id="bo_list_total">
+                    <span>총 <?php echo number_format($total_count) ?>건</span>
+                </div>
+
+                <ul class="btn_bo_user">
+                    <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_admin btn" title="관리자"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
+                    <?php if ($rss_href) { ?><li><a href="<?php echo $rss_href ?>" class="btn_b01 btn" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i><span class="sound_only">RSS</span></a></li><?php } ?>
+                    <li>
+                        <button type="button" class="btn_bo_sch btn_b01 btn" title="게시판 검색"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">게시판 검색</span></button>
+                    </li>
+                    <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b01 btn" title="글쓰기"><i class="fa fa-pen" aria-hidden="true"></i><span class="sound_only">글쓰기</span></a></li><?php } ?>
+                    <?php if ($is_admin == 'super' || $is_auth) {  ?>
+                    <li>
+                        <button type="button" class="btn_more_opt is_list_btn btn_b01 btn" title="게시판 리스트 옵션"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><span class="sound_only">게시판 리스트 옵션</span></button>
+                        <?php if ($is_checkbox) { ?>	
+                        <ul class="more_opt is_list_btn">  
+                            <li><button type="submit" name="btn_submit" value="선택삭제" onclick="document.pressed=this.value"><i class="fa fa-trash" aria-hidden="true"></i> 선택삭제</button></li>
+                            <li><button type="submit" name="btn_submit" value="선택복사" onclick="document.pressed=this.value"><i class="fa fa-files-o" aria-hidden="true"></i> 선택복사</button></li>
+                            <li><button type="submit" name="btn_submit" value="선택이동" onclick="document.pressed=this.value"><i class="fa fa-arrow-right" aria-hidden="true"></i> 선택이동</button></li>
+                        </ul>
+                        <?php } ?>
+                    </li>
+                    <?php }  ?>
+                </ul>
+            </div>
+        </div>
+        <!-- } 게시판 페이지 정보 및 버튼 끝 -->
+
+        <?php if ($is_checkbox) { ?>
+        <div class="container">
+            <div scope="col" class="all_chk chk_box">
+                <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);" class="selec_chk">
+                <label for="chkall">
+                    <span></span>
+                    <b class="_sound_only">전체선택</b>
+                </label>
+            </div>
+        </div>
+        <?php } ?>
+        	
+        <!--Blog One Start-->
+        <section class="blog_one blog-page">
+            <div class="container">
+                <div class="row">
+
+
+                    
+
+                <?php
+                for ($i=0; $i<count($list); $i++) {
+                    if ($i%2==0) $lt_class = "even";
+                    else $lt_class = "";
+                ?>
 
                 
-
-            <?php
-            for ($i=0; $i<count($list); $i++) {
-                if ($i%2==0) $lt_class = "even";
-                else $lt_class = "";
-            ?>
-
-            
-            <div class="col-xl-4 col-lg-4">
-                <?php if ($is_checkbox) { ?>
-                <div class="td_chk chk_box">
-                    <input type="checkbox" name="chk_wr_id[]" value="<?php echo $list[$i]['wr_id'] ?>" id="chk_wr_id_<?php echo $i ?>" class="selec_chk">
-                    <label for="chk_wr_id_<?php echo $i ?>">
-                        <span></span>
-                        <b class="sound_only"><?php echo $list[$i]['subject'] ?></b>
-                    </label>
-                </div>
-                <?php } ?>
-                <!--Blog One Single-->
-                <div class="blog_one_single wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms">
-                    <div class="blog_one_image">
-                        <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/blog/blog--page-img-1.jpg" alt="">
+                <div class="col-xl-4 col-lg-4">
+                    <?php if ($is_checkbox) { ?>
+                    <div class="td_chk chk_box">
+                        <input type="checkbox" name="chk_wr_id[]" value="<?php echo $list[$i]['wr_id'] ?>" id="chk_wr_id_<?php echo $i ?>" class="selec_chk">
+                        <label for="chk_wr_id_<?php echo $i ?>">
+                            <span></span>
+                            <b class="sound_only"><?php echo $list[$i]['subject'] ?></b>
+                        </label>
                     </div>
-                    <div class="blog-one__content">
-                        <ul class="list-unstyled blog-one__meta">
-                            <li><a href="/noticedetail"><i class="far fa-user-circle"></i> <?php echo $list[$i]['name'] ?></a></li>
-                            <li><a href="/noticedetail"><i class="far fa-calendar"></i> <?php echo $list[$i]['datetime2'] ?></a>
-                            </li>
-                        </ul>
-                        <div class="blog_one_title">
-                            <h3>
-                                <a href="<?php echo $list[$i]['href'] ?>">
-                                    <?php echo $list[$i]['subject'] ?>
-                                </a>
-                            </h3>
+                    <?php } ?>
+                    <!--Blog One Single-->
+                    <div class="blog_one_single wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms">
+                        <div class="blog_one_image">
+                            <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/blog/blog--page-img-1.jpg" alt="">
+                        </div>
+                        <div class="blog-one__content">
+                            <ul class="list-unstyled blog-one__meta">
+                                <li><a href="/noticedetail"><i class="far fa-user-circle"></i> <?php echo $list[$i]['name'] ?></a></li>
+                                <li><a href="/noticedetail"><i class="far fa-calendar"></i> <?php echo $list[$i]['datetime2'] ?></a>
+                                </li>
+                            </ul>
+                            <div class="blog_one_title">
+                                <h3>
+                                    <a href="<?php echo $list[$i]['href'] ?>">
+                                        <?php echo $list[$i]['subject'] ?>
+                                    </a>
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <?php } ?>
-            <?php if (count($list) == 0) { echo '<tr><td colspan="'.$colspan.'" class="empty_table">게시물이 없습니다.</td></tr>'; } ?>
-            </div>
+                <?php } ?>
+                <?php if (count($list) == 0) { echo '<tr><td colspan="'.$colspan.'" class="empty_table">게시물이 없습니다.</td></tr>'; } ?>
+                </div>
 
+            </div>
+        </section>
+        <!-- 페이지 -->
+        <?php echo $write_pages; ?>
+        <!-- 페이지 -->
+
+        </form>
+
+        <!-- 게시판 검색 시작 { -->
+        <div class="bo_sch_wrap">
+            <fieldset class="bo_sch">
+                <h3>검색</h3>
+                <form name="fsearch" method="get">
+                <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
+                <input type="hidden" name="sca" value="<?php echo $sca ?>">
+                <input type="hidden" name="sop" value="and">
+                <label for="sfl" class="sound_only">검색대상</label>
+                <select name="sfl" id="sfl">
+                    <?php echo get_board_sfl_select_options($sfl); ?>
+                </select>
+                <label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
+                <div class="sch_bar">
+                    <input type="text" name="stx" value="<?php echo stripslashes($stx) ?>" required id="stx" class="sch_input" size="25" maxlength="20" placeholder=" 검색어를 입력해주세요">
+                    <button type="submit" value="검색" class="sch_btn"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">검색</span></button>
+                </div>
+                <button type="button" class="bo_sch_cls" title="닫기"><i class="fa fa-times" aria-hidden="true"></i><span class="sound_only">닫기</span></button>
+                </form>
+            </fieldset>
+            <div class="bo_sch_bg"></div>
         </div>
-    </section>
-	<!-- 페이지 -->
-	<?php echo $write_pages; ?>
-	<!-- 페이지 -->
-
-    </form>
-
-    <!-- 게시판 검색 시작 { -->
-    <div class="bo_sch_wrap">
-        <fieldset class="bo_sch">
-            <h3>검색</h3>
-            <form name="fsearch" method="get">
-            <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
-            <input type="hidden" name="sca" value="<?php echo $sca ?>">
-            <input type="hidden" name="sop" value="and">
-            <label for="sfl" class="sound_only">검색대상</label>
-            <select name="sfl" id="sfl">
-                <?php echo get_board_sfl_select_options($sfl); ?>
-            </select>
-            <label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
-            <div class="sch_bar">
-                <input type="text" name="stx" value="<?php echo stripslashes($stx) ?>" required id="stx" class="sch_input" size="25" maxlength="20" placeholder=" 검색어를 입력해주세요">
-                <button type="submit" value="검색" class="sch_btn"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">검색</span></button>
-            </div>
-            <button type="button" class="bo_sch_cls" title="닫기"><i class="fa fa-times" aria-hidden="true"></i><span class="sound_only">닫기</span></button>
-            </form>
-        </fieldset>
-        <div class="bo_sch_bg"></div>
-    </div>
-    <script>
-    jQuery(function($){
-        // 게시판 검색
-        $(".btn_bo_sch").on("click", function() {
-            $(".bo_sch_wrap").toggle();
-        })
-        $('.bo_sch_bg, .bo_sch_cls').click(function(){
-            $('.bo_sch_wrap').hide();
+        <script>
+        jQuery(function($){
+            // 게시판 검색
+            $(".btn_bo_sch").on("click", function() {
+                $(".bo_sch_wrap").toggle();
+            })
+            $('.bo_sch_bg, .bo_sch_cls').click(function(){
+                $('.bo_sch_wrap').hide();
+            });
         });
-    });
-    </script>
-    <!-- } 게시판 검색 끝 --> 
+        </script>
+        <!-- } 게시판 검색 끝 --> 
+    </div>
 </div>
 
 
