@@ -64,26 +64,17 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         <div class="footer-widget__title">
                             <h3>공지사항</h3>
                         </div>
-                        <ul class="footer-widget__latest_news_list list-unstyled">
-                            <li>
-                                <div class="footer-widget__latest_news_image">
-                                    <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/resources/fotter-l-n-img-1.jpg" alt="">
-                                </div>
-                                <div class="footer-widget__latest_news_content">
-                                    <h4>2021. 12. 24.</h4>
-                                    <p><a href="blog-details.html">2021 송년휴뮤 안내</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="footer-widget__latest_news_image">
-                                    <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/resources/fotter-l-n-img-2.jpg" alt="">
-                                </div>
-                                <div class="footer-widget__latest_news_content">
-                                    <h4>2021. 10. 10.</h4>
-                                    <p><a href="blog-details.html">홈페이지가 오픈 안내</a></p>
-                                </div>
-                            </li>
-                        </ul>
+
+                        <?php
+                        //공지사항
+                        // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
+                        // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
+                        // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
+                        echo latest('theme/notice', 'notice', 4, 13);
+                        ?>
+
+
+
                     </div>
                 </div>
 
@@ -102,8 +93,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <a href="#" class="fb-clr"><i class="fab fa-facebook-square"></i></a>
                 <a href="#" class="dr-clr"><i class="fab fa-dribbble"></i></a>
                 <a href="#" class="ins-clr"><i class="fab fa-instagram"></i></a> -->
-                <?php if ($admin_href) { ?><a href="/adm" class="btn_admin btn" title="관리자 페이지로"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자 페이지로</span></a><?php } ?>
-                <?php if (!$admin_href) { ?><a href="/bbs/login.php" class="btn_admin btn" title="로그인"><i class="fa fa-lock fa-fw"></i><span class="sound_only">로그인</span></a><?php } ?>
+                <?php if ($is_admin || $member['mb_id']=='manager') { ?><a href="/adm" class="btn_admin btn" title="관리자"><i class="fa fa-cog fa-spin"></i><span class="sound_only">관리자</span></a><?php } ?>
+                <?php if ($member['mb_id']) { ?><a href="/bbs/logout.php" class="btn_admin btn" title="로그아웃"><i class="fas fa-sign-out-alt"></i><span class="sound_only">로그아웃</span></a><?php } ?>
+                <?php if (!$member['mb_id']) { ?><a href="/bbs/login.php" class="btn_admin btn" title="로그인"><i class="fas fa-sign-in-alt"></i><span class="sound_only">로그인</span></a><?php } ?>
             </div>
         </div>
     </div>

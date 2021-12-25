@@ -7,37 +7,21 @@ add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 10);
 $list_count = (is_array($list) && $list) ? count($list) : 0;
 ?>
 
-<div class="notice ft_cnt">
-    <h2><a href="<?php echo get_pretty_url($bo_table); ?>"><?php echo $bo_subject ?></a></h2>
-    <ul>
+
+<ul class="footer-widget__latest_news_list list-unstyled">
     <?php for ($i=0; $i<$list_count; $i++) {  ?>
-        <li>
-            <?php
-            if ($list[$i]['icon_secret']) echo "<span class=\"lock_icon\"><i class=\"fa fa-lock\" aria-hidden=\"true\"></i></span> ";
-            if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N<span class=\"sound_only\">새글</span></span>";
-             //echo $list[$i]['icon_reply']." ";
-            echo "<a href=\"".get_pretty_url($bo_table, $list[$i]['wr_id'])."\">";
-            if ($list[$i]['is_notice'])
-                echo "<strong>".$list[$i]['subject']."</strong>";
-            else
-                echo $list[$i]['subject'];
-
-            if ($list[$i]['comment_cnt'])
-                echo $list[$i]['comment_cnt'];
-
-            echo "</a>";
-
-            // if ($list[$i]['link']['count']) { echo "[{$list[$i]['link']['count']}]"; }
-            // if ($list[$i]['file']['count']) { echo "<{$list[$i]['file']['count']}>"; }
-
-            //if ($list[$i]['icon_file']) echo " <i class=\"fa fa-download\" aria-hidden=\"true\"></i>" ;
-            //if ($list[$i]['icon_link']) echo " <i class=\"fa fa-link\" aria-hidden=\"true\"></i>" ;
-            //if ($list[$i]['icon_hot']) echo " <i class=\"fa fa-heart\" aria-hidden=\"true\"></i>";
-            ?>
-        </li>
+    <li>
+        <div class="footer-widget__latest_news_image">
+            <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/resources/fotter-l-n-img-1.jpg" alt="">
+        </div>
+        <div class="footer-widget__latest_news_content">
+            <h4>​<?php echo date("Y. m. d.", strtotime($list[$i]['wr_datetime'])) ?></h4>
+            <p><a href="<?php echo get_pretty_url($bo_table, $list[$i]['wr_id']) ?>"><?php echo $list[$i]['subject']?></a></p>
+        </div>
+    </li>
     <?php }  ?>
     <?php if ($list_count == 0) { //게시물이 없을 때  ?>
     <li class="empty_li">게시물이 없습니다.</li>
     <?php }  ?>
     </ul>
-</div>
+</ul>

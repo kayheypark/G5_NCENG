@@ -50,7 +50,7 @@ if (G5_IS_MOBILE) {
         // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
         // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
         // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
-        echo latest('notice', 'notice', 4, 13);
+        echo latest('notice', 'notice', 2, 11);
         ?>
 
         <?php echo visit(); // 접속자집계, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
