@@ -222,4 +222,17 @@
 .frm_info {
   padding-left: 20px !important;
 }
+
+.pg_current {
+  background-color: #ea130e !important;
+  border-color: transparent;
+}
+
+.bo_notice td {
+  background-color: rgba(234, 19, 14, 0.05) !important;
+}
+
+.notice_icon {
+  color: #ea130e !important;
+}
 /*# sourceMappingURL=main.css.map */
