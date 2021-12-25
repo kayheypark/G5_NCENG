@@ -101,6 +101,31 @@ $white: #FFFFFF;
         }
     }
 }
+.category {
+    ul {
+        display: flex !important;
+        gap: 6px !important;
+    }
+    ul li a {
+        padding: 12px 22px 10px !important;
+        border-radius: 0 !important;
+        border-color: #e4e4e4 !important;
+        color: #151515 !important;
+        transition: all 200ms ease-in-out 0s;
+        &:hover {
+            color: $white !important;
+            background-color: $brand !important;
+        }
+        &#bo_cate_on {
+            background-color: $brand !important;
+            border-color: $brand !important;
+            color: $white !important;
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+            box-shadow: none !important;
+        }
+    }
+}
 //섹션상세내용 : E
 
 //INUSTI 오버라이팅 : S

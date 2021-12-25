@@ -65,6 +65,31 @@
   }
 }
 
+.category ul {
+  display: flex !important;
+  gap: 6px !important;
+}
+
+.category ul li a {
+  padding: 12px 22px 10px !important;
+  border-radius: 0 !important;
+  border-color: #e4e4e4 !important;
+  color: #151515 !important;
+  transition: all 200ms ease-in-out 0s;
+}
+
+.category ul li a:hover {
+  color: #FFFFFF !important;
+  background-color: #ea130e !important;
+}
+
+.category ul li a#bo_cate_on {
+  background-color: #ea130e !important;
+  border-color: #ea130e !important;
+  color: #FFFFFF !important;
+  box-shadow: none !important;
+}
+
 .page-header {
   position: relative;
 }
