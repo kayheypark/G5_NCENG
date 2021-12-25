@@ -1,0 +1,112 @@
+﻿//앱스트랙트 : S
+$break_point_pc: 1199px;
+$break_point_tablet: 767px;
+$break_point_mobile: 499px;
+//앱스트랙트 : E
+
+//컬러 : S
+$brand: #ea130e;
+$black: #333333;
+$gray: #868686;
+$white: #FFFFFF;
+//컬러 : E
+
+
+//믹스인 : S
+//반응형
+//@mixin rwd( mobile | tablet | pc ) { 내용 }
+@mixin rwd($break_point) {
+    @if ( $break_point == tablet ) {
+        @media only screen and ( max-width: #{$break_point_tablet} ) {
+            @content;
+        }
+    }
+    @if ( $break_point == mobile ) {
+        @media only screen and ( max-width: #{$break_point_mobile} ) {
+            @content;
+        }
+    }
+    //※브레이크 포인트가 PC인 경우는 아주 특별한 경우에 사용!
+    @if ( $break_point == pc ) {
+        @media only screen and ( min-width: #{$break_point_pc} ) {
+            @content;
+        }
+    }
+}
+//믹스인 : E
+
+//레이아웃 : S
+.container, %container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;
+    @include rwd(tablet) {
+        max-width: unset;
+    }
+    @include rwd(mobile) {
+    }
+}
+//레이아웃 : E
+
+//섹션상세내용 : S
+.board {
+    a {
+        color: $gray !important;
+    }
+    tbody tr:hover {
+        border-color: $brand !important;
+    }
+    .bo_tit a {
+        color: $black !important;
+    }
+    &_inner {
+        @extend %container;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        @include rwd(tablet) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        @include rwd(mobile) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+}
+//섹션상세내용 : E
+
+//INUSTI 오버라이팅 : S
+.page-header {
+    h2 {
+        line-height: 1 !important;
+        @include rwd(tablet) {
+            font-size: 50px !important;
+        }
+        @include rwd(mobile) {
+            font-size: 30px !important;
+        }
+    }
+    @include rwd(tablet) {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    @include rwd(mobile) {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+}
+
+
+.site-footer {
+    @include rwd(tablet) {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    @include rwd(mobile) {
+        padding-top: 35px !important;
+        padding-bottom: 35px !important;
+    }
+}
+//INUSTI 오버라이팅 : E

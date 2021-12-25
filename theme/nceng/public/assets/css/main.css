@@ -1,3 +1,89 @@
-﻿body {
-    background-color: aqua;
+.container, .board_inner {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
 }
+
+@media only screen and (max-width: 767px) {
+  .container, .board_inner {
+    max-width: unset;
+  }
+}
+
+.board a {
+  color: #868686 !important;
+}
+
+.board tbody tr:hover {
+  border-color: #ea130e !important;
+}
+
+.board .bo_tit a {
+  color: #333333 !important;
+}
+
+.board_inner {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+@media only screen and (max-width: 767px) {
+  .board_inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .board_inner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.page-header h2 {
+  line-height: 1 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .page-header h2 {
+    font-size: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .page-header h2 {
+    font-size: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .page-header {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .page-header {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .site-footer {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .site-footer {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
