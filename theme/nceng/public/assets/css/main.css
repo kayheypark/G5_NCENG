@@ -63,6 +63,17 @@
   color: #363636 !important;
 }
 
+.board .tbl_head01 thead th {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+.board .tbl_head01 tbody td {
+  font-size: 15px !important;
+}
+
 .board_inner {
   padding-top: 150px;
   padding-bottom: 150px;
@@ -172,5 +183,13 @@
     padding-top: 35px !important;
     padding-bottom: 35px !important;
   }
+}
+
+.txt_rdy {
+  font-size: 12px !important;
+}
+
+.td_date {
+  white-space: nowrap !important;
 }
 /*# sourceMappingURL=main.css.map */
