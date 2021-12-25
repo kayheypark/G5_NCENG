@@ -1,4 +1,5 @@
 <?php
+include_once(G5_LIB_PATH.'/thumbnail.lib.php');
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 // 선택옵션으로 인해 셀합치기가 가변적으로 변함
@@ -92,6 +93,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             </div>
         </div>
         <?php } ?>
+
+
         	
         <!--Blog One Start-->
         <section class="blog_one blog-page">
@@ -99,12 +102,27 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <div class="row">
 
 
-                    
-
                 <?php
                 for ($i=0; $i<count($list); $i++) {
                     if ($i%2==0) $lt_class = "even";
                     else $lt_class = "";
+
+
+                    $thumb = get_list_thumbnail($board['bo_table'], $list[$i]['wr_id'], $board['bo_gallery_width'], $board['bo_gallery_height']);
+
+                    if($thumb['src']) {
+
+                    $img_content = '<img src="'.$thumb['src'].'" alt="'.$thumb['alt'].'" alt="" />';
+
+                    } else {
+
+                    $img_content = '<img src="'.G5_THEME_PUBLIC_URL.'/vendor/images/blog/blog--page-img-1.jpg" alt="" />';
+
+                    }
+
+                    
+
+
                 ?>
 
                 
@@ -121,12 +139,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                     <!--Blog One Single-->
                     <div class="blog_one_single wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms">
                         <div class="blog_one_image">
-                            <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/blog/blog--page-img-1.jpg" alt="">
+                            <?php echo $img_content ?>
                         </div>
                         <div class="blog-one__content">
                             <ul class="list-unstyled blog-one__meta">
-                                <li><a href="/noticedetail"><i class="far fa-user-circle"></i> <?php echo $list[$i]['name'] ?></a></li>
-                                <li><a href="/noticedetail"><i class="far fa-calendar"></i> <?php echo $list[$i]['datetime2'] ?></a>
+                                <li><a href="<?php echo $list[$i]['href'] ?>"><i class="far fa-user-circle"></i> <?php echo $list[$i]['name'] ?></a></li>
+                                <li><a href="<?php echo $list[$i]['href'] ?>"><i class="far fa-calendar"></i> <?php echo $list[$i]['datetime2'] ?></a>
                                 </li>
                             </ul>
                             <div class="blog_one_title">

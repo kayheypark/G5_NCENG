@@ -12,7 +12,7 @@ include_once(G5_PATH.'/head.php');
 </section>
 
 <!--Service Details Start-->
-<section class="services_details">
+<section class="board_inner">
     <div class="container">
         <div class="row">
             <div class="col-xl-12 col-lg-12">
@@ -42,7 +42,7 @@ include_once(G5_PATH.'/head.php');
                             </ul>
                         </div>
                         <div class="services_details_why_choose_us_image">
-                            <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/service/ser-dtl-choose-img-1.jpg" alt="">
+                            <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/service/ser-dtl-choose-img-1.jpg" alt="" style="width: 100%;" />
                         </div>
                     </div>
                 </div>

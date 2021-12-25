@@ -244,4 +244,8 @@
   background-color: rgba(234, 19, 14, 0.1) !important;
   color: #ea130e !important;
 }
+
+#bo_v_img a {
+  display: inline !important;
+}
 /*# sourceMappingURL=main.css.map */
