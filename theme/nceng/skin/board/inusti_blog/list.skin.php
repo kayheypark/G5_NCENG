@@ -17,10 +17,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <!--Page Header Start-->
     <section class="page-header" style="background-image: url(<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/backgrounds/page-header-contact.jpg);">
         <div class="container">
-            <ul class="thm-breadcrumb list-unstyled">
-                <li><a href="/">Home</a></li>
-                <li><span><?php echo $board['bo_subject'] ?></span></li>
-            </ul>
             <h2><?php echo $board['bo_subject'] ?></h2>
         </div>
     </section>
@@ -56,8 +52,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <div class="container board">
         <div id="bo_btn_top">
             <div id="bo_list_total">
-                <span>Total <?php echo number_format($total_count) ?>건</span>
-                <?php echo $page ?> 페이지
+                <span>총 <?php echo number_format($total_count) ?>건</span>
             </div>
 
             <ul class="btn_bo_user">
@@ -125,9 +120,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <div class="blog_one_single wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms">
                     <div class="blog_one_image">
                         <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/blog/blog--page-img-1.jpg" alt="">
-                        <div class="blog_one_date_box">
-                            <p><?php echo $i+1 ?></p>
-                        </div>
                     </div>
                     <div class="blog-one__content">
                         <ul class="list-unstyled blog-one__meta">

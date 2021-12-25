@@ -13,10 +13,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <!--Page Header Start-->
 <section class="page-header" style="background-image: url(<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/backgrounds/page-header-contact.jpg);">
     <div class="container">
-        <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="/">Home</a></li>
-            <li><span>Notice</span></li>
-        </ul>
         <h2><?php echo $board['bo_subject'] ?></h2>
     </div>
 </section>

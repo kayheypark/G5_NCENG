@@ -21,7 +21,7 @@ $list_count = (is_array($list) && $list) ? count($list) : 0;
     </li>
     <?php }  ?>
     <?php if ($list_count == 0) { //게시물이 없을 때  ?>
-    <li class="empty_li">게시물이 없습니다.</li>
+    <li style="padding: 0; font-size: 15px;">게시물이 없습니다.</li>
     <?php }  ?>
     </ul>
 </ul>

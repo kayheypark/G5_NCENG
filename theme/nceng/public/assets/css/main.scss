@@ -87,6 +87,10 @@ $white: #FFFFFF;
             column-gap: 5px;
         }
     }
+    .btn_b01.btn {
+        font-size: 16px !important;
+        color: #363636 !important;
+    }
     &_inner {
         @extend %container;
         padding-top: 150px;

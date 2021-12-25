@@ -7,10 +7,6 @@ include_once(G5_PATH.'/head.php');
 <!--Page Header Start-->
 <section class="page-header" style="background-image: url(<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/backgrounds/page-header-contact.jpg);">
     <div class="container">
-        <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="/">Home</a></li>
-            <li><span>Policy</span></li>
-        </ul>
         <h2>개인정보처리방침</h2>
     </div>
 </section>

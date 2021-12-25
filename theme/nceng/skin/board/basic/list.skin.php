@@ -15,10 +15,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <!--Page Header Start-->
 <section class="page-header" style="background-image: url(<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/backgrounds/page-header-contact.jpg);">
     <div class="container">
-        <ul class="thm-breadcrumb list-unstyled">
-            <li><a href="/">Home</a></li>
-            <li><span><?php echo $board['bo_subject'] ?></span></li>
-        </ul>
         <h2><?php echo $board['bo_subject'] ?></h2>
     </div>
 </section>
@@ -169,18 +165,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <!-- 페이지 -->
                 <?php echo $write_pages; ?>
                 <!-- 페이지 -->
-                
-                <?php if ($list_href || $is_checkbox || $write_href) { ?>
-                <div class="bo_fx">
-                    <?php if ($list_href || $write_href) { ?>
-                    <ul class="btn_bo_user">
-                        <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_admin btn" title="관리자"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
-                        <?php if ($rss_href) { ?><li><a href="<?php echo $rss_href ?>" class="btn_b01 btn" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i><span class="sound_only">RSS</span></a></li><?php } ?>
-                        <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b01 btn" title="글쓰기"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">글쓰기</span></a></li><?php } ?>
-                    </ul>	
-                    <?php } ?>
-                </div>
-                <?php } ?>   
+
                 </form>
 
                 <!-- 게시판 검색 시작 { -->
