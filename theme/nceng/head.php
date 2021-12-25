@@ -49,10 +49,6 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                             <ul class="main-nav__navigation-box float-left">
                                 <li class="gnb-depth-1">
                                     <a href="/sub/about.php">회사소개</a>
-                                    <ul>
-                                        <li><a href="/sub/about.php">회사소개</a></li>
-                                        <li><a href="/sub/milestone.php">회사연혁</a></li>
-                                    </ul><!-- /.sub-menu -->
                                 </li>
                                 <li class="gnb-depth-1 dropdown">
                                     <a href="/bbs/board.php?bo_table=product">제품소개</a>
@@ -63,11 +59,11 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                     </ul><!-- /.sub-menu -->
                                 </li>
                                 <li class="gnb-depth-1 dropdown">
-                                    <a href="/bbs/board.php?bo_table=notice">공지사항</a>
+                                    <a href="/bbs/board.php?bo_table=notice">고객센터</a>
                                     <ul>
                                         <li><a href="/bbs/board.php?bo_table=notice">공지사항</a></li>
-                                        <li><a href="/sub/faq.php">FAQ</a></li>
-                                        <li><a href="/bbs/board.php?bo_table=qna">1:1 문의</a></li>
+                                        <li><a href="/sub/faq.php">자주묻는질문</a></li>
+                                        <li><a href="/bbs/board.php?bo_table=qna">질문답변</a></li>
                                     </ul><!-- /.sub-menu -->
                                 </li>
                                 <li class="gnb-depth-1">

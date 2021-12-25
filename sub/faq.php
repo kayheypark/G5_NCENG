@@ -17,7 +17,7 @@ include_once(G5_PATH.'/head.php');
         <div class="services_details_right">
             <div class="faq_one_right">
                 <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
-                    <div class="accrodion">
+                    <div class="accrodion active">
                         <div class="accrodion-title">
                             <h4>Leaders always look toward the future</h4>
                         </div>
@@ -29,9 +29,9 @@ include_once(G5_PATH.'/head.php');
                             </div><!-- /.inner -->
                         </div>
                     </div>
-                    <div class="accrodion active">
+                    <div class="accrodion">
                         <div class="accrodion-title">
-                            <h4>Leaders always look toward the future</h4>
+                            <h4>Check benefits of choosing our services?</h4>
                         </div>
                         <div class="accrodion-content">
                             <div class="inner">
