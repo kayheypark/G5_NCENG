@@ -93,7 +93,7 @@ include_once(G5_THEME_PATH.'/head.php');
 <section class="our_services_one">
     <div class="container">
         <div class="block-title text-center">
-            <h2>Bussiness</h2>
+            <h2>제품 카테고리</h2>
         </div>
         <div class="row">
             <div class="col-xl-4 col-lg-4">
@@ -106,9 +106,9 @@ include_once(G5_THEME_PATH.'/head.php');
                         </div>
                     </div>
                     <div class="our_services_one_content">
-                        <h3><a href="services-details.html">생산/검사장비 외</a></h3>
-                        <p>자동 스크류 조립기, 비전 검사기 등</p>
-                        <a href="services-details.html" class="services_one_arrow_icon">
+                        <h3><a href="/bbs/board.php?bo_table=product&sca=생산·검사장비">생산/검사장비 외</a></h3>
+                        <p>개발 및 양산 제품의 온도와 습도의 여러 조건으로 인가하여 제품의 문제점 발췌와 신뢰성을 확보하기 위한 설비</p>
+                        <a href="/bbs/board.php?bo_table=product&sca=생산·검사장비" class="services_one_arrow_icon">
                             <span class="flaticon-right-arrow"></span>
                         </a>
                     </div>
@@ -120,13 +120,13 @@ include_once(G5_THEME_PATH.'/head.php');
                     <div class="our_services_one_image">
                         <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/service/service-1-img-2.jpg" alt="">
                         <div class="our_services_icon">
-                            <span class="flaticon-petroleum"></span>
+                            <span class="flaticon-engineering"></span>
                         </div>
                     </div>
                     <div class="our_services_one_content">
-                        <h3><a href="services-details.html">시험 장비</a></h3>
-                        <p>온습도 시험장비, 환경 시험장비</p>
-                        <a href="services-details.html" class="services_one_arrow_icon">
+                        <h3><a href="/bbs/board.php?bo_table=product&sca=온습도시험장비">온습도 시험장비</a></h3>
+                        <p>개발 및 양산 제품의 온도와 습도의 여러 조건으로 인가하여 제품의 문제점 발췌와 신뢰성을 확보하기 위한 설비</p>
+                        <a href="/bbs/board.php?bo_table=product&sca=온습도시험장비" class="services_one_arrow_icon">
                             <span class="flaticon-right-arrow"></span>
                         </a>
                     </div>
@@ -138,129 +138,28 @@ include_once(G5_THEME_PATH.'/head.php');
                     <div class="our_services_one_image">
                         <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/service/service-1-img-3.jpg" alt="">
                         <div class="our_services_icon">
-                            <span class="flaticon-engineering"></span>
+                            <span class="flaticon-petroleum"></span>
                         </div>
                     </div>
                     <div class="our_services_one_content">
-                        <h3><a href="services-details.html">협업제품</a></h3>
-                        <p>SMT 생산설비</p>
-                        <a href="services-details.html" class="services_one_arrow_icon">
+                        <h3><a href="/bbs/board.php?bo_table=product&sca=환경시험장비">환경 시험장비</a></h3>
+                        <p>개발 제품의 충격 및 내구성능 검증하여 제품의 수명을 확인하기 위한 설비(터치/기구/통신/전파)</p>
+                        <a href="/bbs/board.php?bo_table=product&sca=환경시험장비" class="services_one_arrow_icon">
                             <span class="flaticon-right-arrow"></span>
                         </a>
                     </div>
                 </div>
             </div>
+            <a href="/bbs/board.php?bo_table=product" class="thm-btn mt-2" style="margin: 0 auto;">더보기</a>
         </div>
     </div>
-</section>
-
-<!--Testimonails One Start-->
-<section class="testimonails_one"
-    style="background-image: url(<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/testimonials/testimonails_1-bg.jpg);">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-4 col-lg-12">
-                <div class="block-title text-left">
-                    <h2>Clients feedbacks</h2>
-                </div>
-                <div class="swiper-pagination" id="testimonials-one-pagination"></div>
-                <!-- /.swiper-pagination -->
-            </div>
-        </div>
-    </div>
-    <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 4, "autoplay": { "delay": 5000 }, "pagination": {
-        "el": "#testimonials-one-pagination",
-        "type": "bullets",
-        "clickable": true
-        },"breakpoints": {
-        "0": {
-            "spaceBetween": 30,
-            "slidesPerView": 1
-        },
-        "425": {
-            "spaceBetween": 30,
-            "slidesPerView": 1
-        },
-        "575": {
-            "spaceBetween": 30,
-            "slidesPerView": 2
-        },
-        "767": {
-            "spaceBetween": 30,
-            "slidesPerView": 2
-        },
-        "991": {
-            "spaceBetween": 20,
-            "slidesPerView": 2
-        },
-        "1289": {
-            "spaceBetween": 20,
-            "slidesPerView": 2
-        },
-        "1440": {
-            "spaceBetween": 20,
-            "slidesPerView": 2
-        }
-    }}'>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <!--Testimonails One Single-->
-                <div class="testimonails_one_single">
-                    <div class="testimonails_one_quote_icon"><i class="fa fa-quote-left"></i></div>
-                    <div class="testimonails_one_text">
-                        <p>엔씨엔지니어링의 제품은 10년째 사용중입니다.엔씨엔지니어링의 제품은 10년째 사용중입니다.엔씨엔지니어링의 제품은 10년째 사용중입니다.</p>
-                    </div>
-                    <div class="testimonails_one_client_name">
-                        <h3>홍길동</h3>
-                        <p>씨엔엔지니어링 대표</p>
-                    </div>
-                    <div class="testimonails_one_image">
-                        <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/testimonials/testimonails_1-img-1.jpg" alt="">
-                    </div>
-                </div>
-            </div><!-- /.swiper-slide -->
-            <div class="swiper-slide">
-                <!--Testimonails One Single-->
-                <div class="testimonails_one_single">
-                    <div class="testimonails_one_quote_icon"><i class="fa fa-quote-left"></i></div>
-                    <div class="testimonails_one_text">
-                        <p>엔씨엔지니어링의 제품은 10년째 사용중입니다.엔씨엔지니어링의 제품은 10년째 사용중입니다.엔씨엔지니어링의 제품은 10년째 사용중입니다.</p>
-                    </div>
-                    <div class="testimonails_one_client_name">
-                        <h3>홍길동</h3>
-                        <p>씨엔엔지니어링 대표</p>
-                    </div>
-                    <div class="testimonails_one_image">
-                        <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/testimonials/testimonails_1-img-1.jpg" alt="">
-                    </div>
-                </div>
-            </div><!-- /.swiper-slide -->
-            <div class="swiper-slide">
-                <!--Testimonails One Single-->
-                <div class="testimonails_one_single">
-                    <div class="testimonails_one_quote_icon"><i class="fa fa-quote-left"></i></div>
-                    <div class="testimonails_one_text">
-                        <p>엔씨엔지니어링의 제품은 10년째 사용중입니다.엔씨엔지니어링의 제품은 10년째 사용중입니다.엔씨엔지니어링의 제품은 10년째 사용중입니다.</p>
-                    </div>
-                    <div class="testimonails_one_client_name">
-                        <h3>홍길동</h3>
-                        <p>씨엔엔지니어링 대표</p>
-                    </div>
-                    <div class="testimonails_one_image">
-                        <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/testimonials/testimonails_1-img-1.jpg" alt="">
-                    </div>
-                </div>
-            </div><!-- /.swiper-slide -->
-
-        </div><!-- /.swiper-wrapper -->
-    </div><!-- /.swiper-container -->
 </section>
 
 <!--Brand One Start-->
 <section class="brand-one">
     <div class="container">
         <div class="block-title text-center">
-            <h2>Partners</h2>
+            <h2>협력사 및 취급사</h2>
         </div>
         <div class="brand-one__carousel owl-carousel thm__owl-carousel owl-theme"
             data-options='{"loop": true, "autoplay": true, "autoplayHoverPause": true, "autoplayTimeout": 5000, "items": 5, "dots": false, "nav": false, "margin": 140, "smartSpeed": 700, "responsive": { "0": {"items": 2, "margin": 30}, "480": {"items": 3, "margin": 30}, "991": {"items": 4, "margin": 50}, "1199": {"items": 5, "margin": 140}}}'>

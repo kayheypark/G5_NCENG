@@ -57,9 +57,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                                 <li class="gnb-depth-1 dropdown">
                                     <a href="/bbs/board.php?bo_table=product">제품소개</a>
                                     <ul>
-                                        <li><a href="/bbs/board.php?bo_table=product&sca=일반시험기">일반시험기</a></li>
-                                        <li><a href="/bbs/board.php?bo_table=product&sca=중급시험기">중급시험기</a></li>
-                                        <li><a href="/bbs/board.php?bo_table=product&sca=고급시험기">고급시험기</a></li>
+                                        <li><a href="/bbs/board.php?bo_table=product&sca=생산·검사장비">생산·검사장비</a></li>
+                                        <li><a href="/bbs/board.php?bo_table=product&sca=온습도시험장비">온습도시험장비</a></li>
+                                        <li><a href="/bbs/board.php?bo_table=product&sca=환경시험장비">환경시험장비</a></li>
                                     </ul><!-- /.sub-menu -->
                                 </li>
                                 <li class="gnb-depth-1 dropdown">

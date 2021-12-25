@@ -11,46 +11,6 @@ include_once(G5_PATH.'/head.php');
     </div>
 </section>
 
-<section class="founded_one">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12 col-lg-12">
-                <div class="founded_one_image">
-                    <img src="<?php echo(G5_THEME_PUBLIC_URL."/vendor")?>/images/resources/founded-1-img-1.jpg" alt="">
-                    <div class="founded_icon">
-                        <span class="flaticon-eco-factory"></span>
-                        <p>Founded <br> 1966</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-5 col-lg-4">
-                <div class="founded_one_left">
-                    <div class="block-title text-left">
-                        <h4>About Company</h4>
-                        <h2>Leaders Always Look Toward the Future</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4">
-                <div class="founded_text">
-                    <p>There are many variations of passages of lorem available, but the majority have suff
-                        alteration in some form, by injected humour.</p>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4">
-                <ul class="founded_list list-unstyled">
-                    <li><i class="fa fa-check"></i>Invest in your simply</li>
-                    <li><i class="fa fa-check"></i>Support people in free text</li>
-                    <li><i class="fa fa-check"></i>Largest global industrial</li>
-                    <li><i class="fa fa-check"></i>Share your love for factory</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!--History Started Start-->
 <section class="history_started">
     <div class="container">

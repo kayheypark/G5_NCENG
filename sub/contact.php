@@ -21,7 +21,7 @@ include_once(G5_PATH.'/head.php');
                     <div class="all_contact_info_single mail_info">
                         <div class="icon"><span class="flaticon-email"></span></div>
                         <div class="content">
-                            <a href="mailto:example@gmail.com">example@gmail.com</a>
+                            <a href="mailto:<?php echo $config['cf_8'] ?>"><?php echo $config['cf_8'] ?></a>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ include_once(G5_PATH.'/head.php');
                     <div class="all_contact_info_single phone_info">
                         <div class="icon"><span class="flaticon-telephone"></span></div>
                         <div class="content">
-                            <a href="tel:010-0000-0000">010-0000-0000</a>
+                            <a href="tel:<?php echo $config['cf_5'] ?>"><?php echo $config['cf_5'] ?></a>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ include_once(G5_PATH.'/head.php');
                     <div class="all_contact_info_single location_info">
                         <div class="icon"><span class="flaticon-pin"></span></div>
                         <div class="content">
-                            <p>서울특별시 관악구 남부순환로 000길</p>
+                            <p><?php echo $config['cf_4'] ?></p>
                         </div>
                     </div>
                 </div>

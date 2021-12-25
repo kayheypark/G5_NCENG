@@ -18,9 +18,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         </div>
                         <div class="footer-widget_about_text__box">
                             <p>
-                                (주)엔씨엔지니어링<br />
-                                대표이사: 송준석<br />
-                                사업자번호: 000-000-00000<br />
+                                <?php echo $config['cf_1'] ?><br />
+                                대표: <?php echo $config['cf_2'] ?><br />
+                                사업자등록번호: <?php echo $config['cf_9'] ?><br />
                             </p>
                         </div>
                         <ul class="list-unstyled">
@@ -29,7 +29,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                                     <span class="flaticon-email" title="이메일"></span>
                                 </div>
                                 <div class="footer-widget_about_text">
-                                    <a href="mailto:example@gmail.com">example@gmail.com</a>
+                                    <a href="mailto:<?php echo $config['cf_8'] ?>"><?php echo $config['cf_8'] ?></a>
                                 </div>
                             </li>
                             <li>
@@ -37,7 +37,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                                     <span class="flaticon-telephone" title="대표번호"></span>
                                 </div>
                                 <div class="footer-widget_about_text">
-                                    <a href="tel:02-000-0000">02-000-0000</a>
+                                    <a href="tel:<?php echo $config['cf_5'] ?>"><?php echo $config['cf_5'] ?></a>
                                 </div>
                             </li>
                             <li>
@@ -45,7 +45,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                                     <i class="fa fa-clock" style="font-size: 15px; color: #ea130e;" title="운영시간"></i>
                                 </div>
                                 <div class="footer-widget_about_text">
-                                    <span style="font-size: 15px; color: #FFFFFF;">09:00 ~ 18:00</span>
+                                    <span style="font-size: 15px; color: #FFFFFF;"><?php echo $config['cf_7'] ?></span>
                                 </div>
                             </li>
                         </ul>
@@ -90,7 +90,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     <div class="site-footer_bottom">
         <div class="container">
             <div class="site-footer_bottom_copyright">
-                <p>© Copyright 2020 by <a href="/">엔씨엔지니어링</a></p>
+                <p>© Copyright 2020 by <a href="/"><?php echo $config['cf_1'] ?></a></p>
             </div>
             <div class="site-footer__social">
                 <!-- <a href="#" class="tw-clr"><i class="fab fa-twitter"></i></a>

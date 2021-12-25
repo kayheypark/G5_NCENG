@@ -18,19 +18,27 @@ include_once(G5_PATH.'/head.php');
             <div class="col-xl-12 col-lg-12">
                 <div class="services_details_right">
                     <div class="services_details_right_text">
-                        <h4>NC엔지니어링은</h4>
-                        <p>
-                            차별화된 기술로 신뢰성 환경 자동화 장비제작
-                        </p>
+                        <h4>Petroleum and Gas</h4>
+                        <p>Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui
+                            dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae dicta
+                            sunt explicabo. Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit
+                            amet finibus eros. Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the ndustry standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy
+                            text of the new design printng and type setting Ipsum Take a look at our round up of
+                            the best shows coming soon to your telly box has been the is industrys. Lorem Ipsum
+                            is simply dummy text of the printing and typesetting industry. </p>
                     </div>
                     <div class="services_details_why_choose_us">
                         <div class="services_details_why_choose_us_content">
-                            <h3>사업영역</h3>
+                            <h3>Why Choose Us?</h3>
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-check"></i>생산/검사장비 외</li>
-                                <li><i class="fa fa-check"></i>시험 장비</li>
-                                <li><i class="fa fa-check"></i>협업제품</li>
+                                <li><i class="fa fa-check"></i>Refresing to get such a touch</li>
+                                <li><i class="fa fa-check"></i>Duis aute irure dolor in in voluptate</li>
+                                <li><i class="fa fa-check"></i>Velit esse cillum eu fugiat pariatur</li>
+                                <li><i class="fa fa-check"></i>Duis aute irure dolor in in voluptate</li>
                             </ul>
                         </div>
                         <div class="services_details_why_choose_us_image">
