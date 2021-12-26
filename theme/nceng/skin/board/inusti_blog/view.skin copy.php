@@ -21,64 +21,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <section class="blog_details">
     <div class="container">
         <div class="row">
-            
             <div class="col-xl-12 col-lg-12">
                 <div class="blog_details_left">
                     <div class="blog_details_content">
-
-                        <div class="d-flex justify-content-between align-items-center">
-
                         <?php if ($category_name) { ?>
                             <p><?php echo $view['ca_name']; // 분류 출력 끝 ?></p>
                         <?php } ?>
-                        
-                        <!-- 게시물 상단 버튼 시작 { -->
-                        <div id="bo_v_top" class="board">
-                            <?php ob_start(); ?>
-
-                            <ul class="btn_bo_user bo_v_com mt-0">
-                                <li><a href="<?php echo $list_href ?>" class="btn_b01 btn" title="목록"><i class="fa fa-list" aria-hidden="true"></i><span class="sound_only">목록</span></a></li>
-                                <?php if ($reply_href) { ?><li><a href="<?php echo $reply_href ?>" class="btn_b01 btn" title="답변"><i class="fa fa-reply" aria-hidden="true"></i><span class="sound_only">답변</span></a></li><?php } ?>
-                                <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b01 btn" title="글쓰기"><i class="fa fa-pen" aria-hidden="true"></i><span class="sound_only">글쓰기</span></a></li><?php } ?>
-                                <?php if($update_href || $delete_href || $copy_href || $move_href || $search_href) { ?>
-                                <li>
-                                    <button type="button" class="btn_more_opt is_view_btn btn_b01 btn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><span class="sound_only">게시판 리스트 옵션</span></button>
-                                    <ul class="more_opt is_view_btn"> 
-                                        <?php if ($update_href) { ?><li><a href="<?php echo $update_href ?>">수정<i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li><?php } ?>
-                                        <?php if ($delete_href) { ?><li><a href="<?php echo $delete_href ?>" onclick="del(this.href); return false;">삭제<i class="fa fa-trash" aria-hidden="true"></i></a></li><?php } ?>
-                                        <?php if ($copy_href) { ?><li><a href="<?php echo $copy_href ?>" onclick="board_move(this.href); return false;">복사<i class="fa fa-files-o" aria-hidden="true"></i></a></li><?php } ?>
-                                        <?php if ($move_href) { ?><li><a href="<?php echo $move_href ?>" onclick="board_move(this.href); return false;">이동<i class="fa fa-arrows" aria-hidden="true"></i></a></li><?php } ?>
-                                        <?php if ($search_href) { ?><li><a href="<?php echo $search_href ?>">검색<i class="fa fa-search" aria-hidden="true"></i></a></li><?php } ?>
-                                    </ul> 
-                                </li>
-                                <?php } ?>
-                            </ul>
-                            <script>
-
-                            jQuery(function($){
-                                // 게시판 보기 버튼 옵션
-                                $(".btn_more_opt.is_view_btn").on("click", function(e) {
-                                    e.stopPropagation();
-                                    $(".more_opt.is_view_btn").toggle();
-                                });
-                
-                                $(document).on("click", function (e) {
-                                    if(!$(e.target).closest('.is_view_btn').length) {
-                                        $(".more_opt.is_view_btn").hide();
-                                    }
-                                });
-                            });
-                            </script>
-                            <?php
-                            $link_buttons = ob_get_contents();
-                            ob_end_flush();
-                            ?>
-                        </div>
-                        <!-- } 게시물 상단 버튼 끝 -->
-
-                        </div>
-
-                        
                         <div class="blog_details_title">
                             <h3>
                                 <?php
