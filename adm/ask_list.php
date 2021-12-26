@@ -89,7 +89,6 @@ $result = sql_query($sql);
         <td><?php echo $row['RegistDate']; ?></td>
         <td class="td_mng td_mng_l">
             <a href="./ask_form.php?w=u&amp;AskSeq=<?php echo $row['AskSeq']; ?>" class="btn btn_03"><span class="sound_only"><?php echo htmlspecialchars2($row['AskTitle']); ?> </span>수정</a>
-            <a href="<?php echo get_pretty_url('ask', $row['AskSeq']); ?>" class="btn btn_02"><span class="sound_only"><?php echo htmlspecialchars2($row['AskTitle']); ?> </span> 보기</a>
             <a href="./ask_update.php?w=d&amp;AskSeq=<?php echo $row['AskSeq']; ?>" onclick="return delete_confirm(this);" class="btn btn_02"><span class="sound_only"><?php echo htmlspecialchars2($row['AskTitle']); ?> </span>삭제</a>
         </td>
     </tr>

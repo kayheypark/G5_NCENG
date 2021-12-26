@@ -56,48 +56,51 @@ include_once (G5_ADMIN_PATH.'/admin.head.php');
     <table>
     <caption><?php echo $g5['title']; ?> 목록</caption>
     <colgroup>
-        <col class="grid_4">
-        <col>
+        <col width="15%">
+        <col width="35%">
+        <col width="15%">
+        <col width="35%">
     </colgroup>
     <tbody>
     <tr>
-        <th scope="row">번호</th>
-        <td>
-            1004
-        </td>
+        <th scope="row">제목</th>
+        <td><?php echo $co['AskTitle']; ?></td>
+        <th scope="row">등록일</th>
+        <td><?php echo $co['RegistDate']; ?></td>
     </tr>
     <tr>
-        <th scope="row">제목</th>
-        <td>
-            문의제목입니다.
-        </td>
+        <th scope="row">전화번호</th>
+        <td><?php echo $co['AskPhone']; ?></td>
+        <th scope="row">이메일</th>
+        <td><?php echo $co['AskEmail']; ?></td>
     </tr>
     <tr>
         <th scope="row">내용</th>
-        <td>
-            <p style="white-space: pre-line;">환불요청드립니다.!환불요청드립니다. !환불요청드립니다. !</p>
-        </td>
+        <td colspan="3"><p style="white-space: pre-line;"><?php echo $co['AskContent']; ?></p></td>
     </tr>
     <tr>
         <th scope="row"><label for="co_skin">처리상태<strong class="sound_only">필수</strong></label></th>
-        <td>
-        <select id="co_skin" name="co_skin" required="">
+        <td colspan="3">
+        <select id="co_skin" name="co_skin" required>
             <option value="">선택</option>
-            <option value="theme/basic">미열람</option>
-            <option value="theme/basic">상담중</option>
-            <option value="theme/basic">상담완료</option>
+            <option value="미열람" <?php if($co['AskStatus'] == "미열람") echo "selected";?>>미열람</option>
+            <option value="상담중" <?php if($co['AskStatus'] == "상담중") echo "selected";?>>상담중</option>
+            <option value="상담완료" <?php if($co['AskStatus'] == "상담완료") echo "selected";?>>상담완료</option>
         </select>
         </td>
     </tr>
-
     <tr>
         <th scope="row">메모</th>
-        <td>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+        <td colspan="3">
+            <textarea name="" id="" cols="30" rows="10"><?php echo $co['AskMemo']; ?></textarea>
         </td>
     </tr>
-
-  
+    <?php if ( $co['RegistDate'] != $co['LastUpdate'] ) { ?>
+    <tr>
+        <th scope="row">최근수정일</th>
+        <td colspan="3"><?php echo $co['LastUpdate']; ?></td>
+    </tr>
+    <?php } ?>
     </tbody>
     </table>
 </div>
