@@ -78,27 +78,27 @@ include_once(G5_PATH.'/head.php');
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" name="AskName" id="AskName" value="" placeholder="성함" require />
+                                    <input type="text" name="AskName" id="AskName" value="" placeholder="성함" required />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="email" name="AskEmail" id="AskEmail" value="" placeholder="이메일" require />
+                                    <input type="email" name="AskEmail" id="AskEmail" value="" placeholder="이메일" required />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" name="AskPhone" id="AskPhone" value="" placeholder="전화번호" require />
+                                    <input type="text" name="AskPhone" id="AskPhone" value="" placeholder="전화번호" required />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="input-group">
-                                    <input type="text" name="AskTitle" id="AskTitle" value="" placeholder="제목" require />
+                                    <input type="text" name="AskTitle" id="AskTitle" value="" placeholder="제목" required />
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="input-group">
-                                    <textarea name="AskContent" id="AskContent" value="" placeholder="문의 내용을 입력해주세요" require></textarea>
+                                    <textarea name="AskContent" id="AskContent" value="" placeholder="문의 내용을 입력해주세요" required></textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
