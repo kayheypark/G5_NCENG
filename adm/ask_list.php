@@ -56,6 +56,7 @@ $result = sql_query($sql);
     <colgroup>
         <col width="40" />
         <col width="150" />
+        <col width="150" />
         <col />
         <col width="150" />
         <col width="150" />
@@ -66,6 +67,7 @@ $result = sql_query($sql);
     <thead>
     <tr>
         <th scope="col">번호</th>
+        <th scope="col">처리상태</th>
         <th scope="col">제목</th>
         <th scope="col">내용</th>
         <th scope="col">작성자</th>
@@ -81,6 +83,7 @@ $result = sql_query($sql);
     ?>
     <tr class="<?php echo $bg; ?>">
         <td class="td_id"><?php echo $row['AskSeq']; ?></td>
+        <td class="td_id"><?php echo $row['AskStatus']; ?></td>
         <td><?php echo htmlspecialchars2($row['AskTitle']); ?></td>
         <td class="td_left"><?php echo htmlspecialchars2($row['AskContent']); ?></td>
         <td><?php echo htmlspecialchars2($row['AskName']); ?></td>
