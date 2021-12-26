@@ -17,7 +17,7 @@
     //쿼리문
     $sql = "
     insert into
-    parkscode_ask
+    g5_parkscode_ask
     (
         AskName, AskEmail, AskPhone, AskTitle, AskContent, RegistDate
     )

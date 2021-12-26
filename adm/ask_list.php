@@ -29,7 +29,7 @@ if(!sql_query(" DESCRIBE {$g5['parkscode_ask']} ", false)) {
 $g5['title'] = '간편문의함';
 include_once (G5_ADMIN_PATH.'/admin.head.php');
 
-$sql_common = " from {$g5['parkscode_ask']} ";
+$sql_common = " from {$g5['parkscode_ask']} where IsEnabled=1 ";
 
 // 테이블의 전체 레코드수만 얻음
 $sql = " select count(*) as cnt " . $sql_common;

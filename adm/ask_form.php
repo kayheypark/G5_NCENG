@@ -8,11 +8,6 @@ auth_check_menu($auth, $sub_menu, "w");
 $AskSeq = isset($_REQUEST['AskSeq']) ? preg_replace('/[^a-z0-9_]/i', '', $_REQUEST['AskSeq']) : '';
 
 
-
-
-
-
-
 $html_title = "간편문의함";
 $g5['title'] = $html_title.' 관리';
 $readonly = '';
@@ -22,7 +17,7 @@ if ($w == "u")
     $html_title .= " 수정";
     $readonly = " readonly";
 
-    $sql = " select * from {$g5['parkscode_ask']} where AskSeq = '$AskSeq' ";
+    $sql = " select * from {$g5['parkscode_ask']} where IsEnabled=1 and AskSeq = '$AskSeq' ";
     $co = sql_fetch($sql);
     if (!$co['AskSeq'])
         alert('등록된 자료가 없습니다.');
@@ -47,10 +42,11 @@ else
 include_once (G5_ADMIN_PATH.'/admin.head.php');
 ?>
 
-<form name="frmcontentform" action="./contentformupdate.php" onsubmit="return frmcontentform_check(this);" method="post" enctype="MULTIPART/FORM-DATA" >
+<form name="frmcontentform" action="./ask_update.php" onsubmit="return frmcontentform_check(this);" method="post" enctype="MULTIPART/FORM-DATA" >
 <input type="hidden" name="w" value="<?php echo $w; ?>">
 <input type="hidden" name="co_html" value="1">
 <input type="hidden" name="token" value="">
+<input type="hidden" name="AskSeq" value="<?php echo $co['AskSeq']; ?>" />
 
 <div class="tbl_frm01 tbl_wrap">
     <table>
@@ -81,7 +77,7 @@ include_once (G5_ADMIN_PATH.'/admin.head.php');
     <tr>
         <th scope="row"><label for="co_skin">처리상태<strong class="sound_only">필수</strong></label></th>
         <td colspan="3">
-        <select id="co_skin" name="co_skin" required>
+        <select id="AskStatus" name="AskStatus" required>
             <option value="">선택</option>
             <option value="미열람" <?php if($co['AskStatus'] == "미열람") echo "selected";?>>미열람</option>
             <option value="상담중" <?php if($co['AskStatus'] == "상담중") echo "selected";?>>상담중</option>
@@ -92,7 +88,7 @@ include_once (G5_ADMIN_PATH.'/admin.head.php');
     <tr>
         <th scope="row">메모</th>
         <td colspan="3">
-            <textarea name="" id="" cols="30" rows="10"><?php echo $co['AskMemo']; ?></textarea>
+            <textarea name="AskMemo" id="AskMemo" cols="30" rows="10"><?php echo $co['AskMemo']; ?></textarea>
         </td>
     </tr>
     <?php if ( $co['RegistDate'] != $co['LastUpdate'] ) { ?>
