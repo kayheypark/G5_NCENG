@@ -29,9 +29,15 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
                         <h2><?php echo $qaconfig['qa_title'] ?> 카테고리</h2>
                         <ul id="bo_cate_ul">
                             <?php echo $category_option ?>
+                            <?php if ( !$is_admin && $member['mb_id']!='manager' ) { ?>
                             <li>
                                 <a href="javascript: member_leave();">회원탈퇴</a>
                             </li>
+                            <?php } else { ?>
+                            <li>
+                                <a href="javascript: alert('관리자는 회원탈퇴를 할 수 없습니다');">회원탈퇴</a>
+                            </li>
+                            <?php } ?>
                             <script>
                             // 탈퇴의 경우 아래 코드를 연동하시면 됩니다.
                             function member_leave()
