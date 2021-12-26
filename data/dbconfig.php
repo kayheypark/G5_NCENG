@@ -40,6 +40,7 @@ $g5['faq_master_table'] = G5_TABLE_PREFIX.'faq_master'; // 자주하시는 질�
 $g5['new_win_table'] = G5_TABLE_PREFIX.'new_win'; // 새창 테이블
 $g5['menu_table'] = G5_TABLE_PREFIX.'menu'; // 메뉴관리 테이블
 $g5['social_profile_table'] = G5_TABLE_PREFIX.'member_social_profiles'; // 소셜 로그인 테이블
+$g5['parkscode_ask'] = G5_TABLE_PREFIX.'parkscode_ask'; // 간편문의
 
 define('G5_USE_SHOP', true);
 
@@ -69,4 +70,5 @@ $g5['g5_shop_item_stocksms_table'] = G5_SHOP_TABLE_PREFIX.'item_stocksms'; // �
 $g5['g5_shop_post_log_table'] = G5_SHOP_TABLE_PREFIX.'order_post_log'; // 주문요청 로그 테이블
 $g5['g5_shop_order_data_table'] = G5_SHOP_TABLE_PREFIX.'order_data'; // 모바일 결제정보 임시저장 테이블
 $g5['g5_shop_inicis_log_table'] = G5_SHOP_TABLE_PREFIX.'inicis_log'; // 이니시스 모바일 계좌이체 로그 테이블
+
 ?>
