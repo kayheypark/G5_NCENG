@@ -98,7 +98,7 @@ $result = sql_query($sql);
     <?php
     }
     if ($i == 0) {
-        echo '<tr><td colspan="8" class="empty_table">자료가 한건도 없습니다.</td></tr>';
+        echo '<tr><td colspan="9" class="empty_table">아직 등록된 간편문의가 없습니다.</td></tr>';
     }
     ?>
     </tbody>
