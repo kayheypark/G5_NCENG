@@ -2,10 +2,7 @@
 
     //임포트
     include_once("../common.php");
-    ob_start();
-    include_once ("./bbs/write_update_mail.php");
-    $content = ob_get_contents();
-    ob_end_clean();
+    include_once(G5_PATH.'/lib/mailer.lib.php');
 
     //엔티티
     $Name = $_POST['AskName'];
@@ -29,6 +26,7 @@
 
     //실행부
     sql_query($sql);
+    mailer($config['cf_admin_email_name'], $config['cf_admin_email'], $config['cf_admin_email'], "{$Name}님의 새로운 간편문의가 도착하였습니다.", "{$Content} / {$Email} / {$Phone})");
     alert("정상적으로 간편문의가 등록되었습니다.", "/sub/contact.php", true);
     alert("간편문의가 등록중 오류가 발생되어 취소되었습니다.", false);
 
