@@ -1,3 +1,5 @@
 ﻿/data/cache
 /data/session
 /data/file
+dbconfig.php
+dbconfig_local.php
